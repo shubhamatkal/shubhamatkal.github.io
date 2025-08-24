@@ -24,4 +24,5 @@ pnpm-debug.log*
 .cursor
 .astro
 .vscode
+.vscode
 node_modules
