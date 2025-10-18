@@ -45,6 +45,11 @@ export const SOCIALS: Socials = [
     ICON: "github"
   },
   { 
+    NAME: "x",
+    HREF: "https://x.com/shubhamatkal",
+    ICON: "x"
+  },
+  { 
     NAME: "youtube",
     HREF: "https://youtube.com/@shubhamatkal",
     ICON: "youtube"
