@@ -34,27 +34,27 @@ export const ABOUT: Metadata = {
 };
 
 export const SOCIALS: Socials = [
-  { 
+  {
     NAME: "linkedin",
     HREF: "https://linkedin.com/in/shubhamatkal",
     ICON: "linkedin"
   },
-  { 
+  {
     NAME: "github",
     HREF: "https://github.com/shubhamatkal",
     ICON: "github"
   },
-  { 
-    NAME: "x",
-    HREF: "https://x.com/shubhamatkal",
-    ICON: "x"
-  },
-  { 
+  // { 
+  //   NAME: "x",
+  //   HREF: "https://x.com/shubhamatkal",
+  //   ICON: "x"
+  // },
+  {
     NAME: "youtube",
     HREF: "https://youtube.com/@shubhamatkal",
     ICON: "youtube"
   },
-  { 
+  {
     NAME: "whatsapp",
     HREF: "https://wa.me/917219357419",
     ICON: "whatsapp"

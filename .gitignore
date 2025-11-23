@@ -3,6 +3,7 @@ dist/
 
 # generated types
 .astro/
+.cursor/
 
 # dependencies
 node_modules/
@@ -21,8 +22,5 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-.cursor
-.astro
-.vscode
 .vscode
 node_modules
