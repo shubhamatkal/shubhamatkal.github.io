@@ -4,43 +4,56 @@ import Container from "@components/Container.astro";
 import SocialIcon from "@components/SocialIcon.astro";
 import BackToPrev from "@components/BackToPrev.astro";
 import { ABOUT, SITE, SOCIALS } from "@consts";
-
 ---
 
 <PageLayout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
   <Container>
     <div class="space-y-10">
-      <BackToPrev href="/">
-        Back to home
-      </BackToPrev>
-      <div class="animate font-semibold text-black dark:text-white">
-        About
-      </div>
-      
+      <BackToPrev href="/"> Back to home </BackToPrev>
+      <div class="animate font-semibold text-black dark:text-white">About</div>
+
       <section class="animate space-y-6">
         <article class="space-y-4">
           <p>
-            Passionate problem solver who loves building end-to-end real-world solutions. Comfortable working with
-            any technology or tool required to solve a problem. Built and shipped CPCRM v0.1 as a solo founding
-            engineer, taking it from idea to 25 active power users. Highly active on GitHub, constantly learning,
-            experimenting, and shipping new projects. Fast learner, hardworking, and adaptable. Actively looking
-            for immediate opportunities where I can contribute, grow and build impactful products.
+            Passionate problem solver/developer who loves building end-to-end
+            real-world solutions. Comfortable working with any technology or
+            tool required to solve a problem. Built and shipped CRM(Early stage
+            product) v0.1 as a 1st developer intern, taking it from idea to 25
+            active power users. I hold Diploma in Data Science and Programming
+            from IIT Madras. Constantly learning, experimenting, and building
+            new projects. Hardworking, and adaptable. Actively looking for
+            immediate opportunities where I can contribute, grow and build
+            impactful products.
           </p>
-          
+
           <p>
-            I hold a <strong>Diploma in Mechanical Engineering from Government Polytechnic Pune</strong>, which provided me with a strong problem-solving and analytical foundation. Building on this, I have completed a <strong>Diploma in Programming and Data Science with AI from IIT Madras</strong>, equipping me with a robust understanding of software development, data analysis, and artificial intelligence.
+            I hold a <strong
+              >Diploma in Mechanical Engineering from Government Polytechnic
+              Pune</strong
+            >, which provided me with a strong problem-solving and analytical
+            foundation. Building on this, I have completed a <strong
+              >Diploma in Programming and Data Science with AI from IIT Madras</strong
+            >, equipping me with a robust understanding of software development,
+            data analysis, and artificial intelligence.
           </p>
-          
-          <p>
+
+          <!-- <p>
             In addition, I have cleared <strong>CMT Level 1</strong> and earned <strong>NISM certifications</strong>, which reflect my commitment to continuous learning and professional development beyond the tech domain.
-          </p>
-          
+          </p> -->
+
           <p>
-            Over the years, I have gained a broad understanding of <strong>nearly all major tech stacks</strong>, and I am confident working across different technologies to build end-to-end solutions. Whether it's web, mobile, backend, cloud, or data-driven applications, I enjoy diving deep and delivering results that matter.
+            Over the years, I have gained a broad understanding of <strong
+              >nearly all major tech stacks</strong
+            >, and I am confident working across different technologies to build
+            end-to-end solutions. Whether it's web, mobile, backend, cloud, or
+            data-driven applications, I enjoy diving deep and delivering results
+            that matter.
           </p>
-          
+
           <p>
-            I believe in creating work that not only solves problems but also inspires innovation. This portfolio reflects my journey, my projects, and my ongoing exploration in the tech world.
+            I believe in creating work that not only solves problems but also
+            inspires innovation. This portfolio reflects my journey, my
+            projects, and my ongoing exploration in the tech world.
           </p>
 
           <p>
@@ -51,7 +64,10 @@ import { ABOUT, SITE, SOCIALS } from "@consts";
                 aria-label="Email Shubham for CV"
                 class="text-blue-600 no-underline inline-flex items-center"
               >
-                email<span class="transform -rotate-45 origin-center transition-transform duration-200 group-hover:translate-x-1">→</span>
+                email<span
+                  class="transform -rotate-45 origin-center transition-transform duration-200 group-hover:translate-x-1"
+                  >→</span
+                >
               </a>
             </span>
           </p>
@@ -59,29 +75,33 @@ import { ABOUT, SITE, SOCIALS } from "@consts";
       </section>
 
       <section class="animate space-y-4">
-        <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
-        </h5>
+        <h5 class="font-semibold text-black dark:text-white">Let's Connect</h5>
         <article>
           <p>
-            If you want to get in touch with me about something or just to say hi, reach out on WhatsApp (I'm most active there).
-            You can also connect with me on LinkedIn or send me an email — I'd be happy to hear from you!
+            You can connect with me on LinkedIn or github or send me an email —
+            I'd be happy to hear from you!
           </p>
         </article>
         <ul class="flex flex-wrap [&>li:first-child_a]:pl-0">
-          {SOCIALS.map(SOCIAL => (
-            <li>
-              <SocialIcon 
-                icon={SOCIAL.ICON}
-                href={SOCIAL.HREF}
-                name={SOCIAL.NAME}
-                ariaLabel={`${SITE.NAME} on ${SOCIAL.NAME}`}
-              />
-            </li>
-          ))}
+          {
+            SOCIALS.map((SOCIAL) => (
+              <li>
+                <SocialIcon
+                  icon={SOCIAL.ICON}
+                  href={SOCIAL.HREF}
+                  name={SOCIAL.NAME}
+                  ariaLabel={`${SITE.NAME} on ${SOCIAL.NAME}`}
+                />
+              </li>
+            ))
+          }
         </ul>
         <div class="mt-4">
-          <a href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`} class="text-gray-600 hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out ">
+          <a
+            href={`mailto:${SITE.EMAIL}`}
+            aria-label={`Email ${SITE.NAME}`}
+            class="text-gray-600 hover:text-black hover:dark:text-white transition-colors duration-300 ease-in-out"
+          >
             {SITE.EMAIL}
           </a>
         </div>

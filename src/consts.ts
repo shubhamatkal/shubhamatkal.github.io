@@ -49,14 +49,14 @@ export const SOCIALS: Socials = [
   //   HREF: "https://x.com/shubhamatkal",
   //   ICON: "x"
   // },
-  {
-    NAME: "youtube",
-    HREF: "https://youtube.com/@shubhamatkal",
-    ICON: "youtube"
-  },
-  {
-    NAME: "whatsapp",
-    HREF: "https://wa.me/917219357419",
-    ICON: "whatsapp"
-  }
+  // {
+  //   NAME: "youtube",
+  //   HREF: "https://youtube.com/@shubhamatkal",
+  //   ICON: "youtube"
+  // },
+  // {
+  //   NAME: "whatsapp",
+  //   HREF: "https://wa.me/917219357419",
+  //   ICON: "whatsapp"
+  // }
 ];

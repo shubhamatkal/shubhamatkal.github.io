@@ -1,8 +1,11 @@
 ---
-company: "CPCRM"
-role: "Founding Engineer"
+company: "CRM(stealth)"
+role: "Developer Intern"
 dateStart: "04/01/2025"
-dateEnd: "10/01/2025"
+dateEnd: "08/01/2025"
 ---
 
-Built CPCRM, a cross‑platform Channel Partner CRM from scratch using Flutter (mobile), React (web), and Node.js (backend) and launched v0.1 for 25 power users. Focused on scalable architecture, clean APIs, and a consistent user experience across platforms.
+Built CRM(saas) v0.1 as solo developer intern and shipped product with 25 power users, a cross-platform
+CRM using Flutter (mobile, web), and Node.js (backend), Devops(CICD, AWS, EC2, S3, nginx, bash).
+Focused on scalable architecture. Collaborated with power users and solved real world problems and
+automations.
