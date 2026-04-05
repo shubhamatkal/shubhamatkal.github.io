@@ -1,6 +1,6 @@
 ---
 company: "CRM(stealth)"
-role: "Developer Intern"
+role: "Software Developer Intern"
 dateStart: "04/01/2025"
 dateEnd: "08/01/2025"
 ---

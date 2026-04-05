@@ -44,6 +44,11 @@ export const SOCIALS: Socials = [
     HREF: "https://github.com/shubhamatkal",
     ICON: "github"
   },
+  {
+    NAME: "leetcode",
+    HREF: "https://leetcode.com/u/shubhamatkal/",
+    ICON: "leetcode"
+  },
   // { 
   //   NAME: "x",
   //   HREF: "https://x.com/shubhamatkal",
