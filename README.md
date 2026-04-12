@@ -1,5 +1,5 @@
 
-This is personal portfolio website for Shubham Atkal it  is a static, minimalist, lightweight, lightning fast portfolio and blog website. check the deployment [here](https://shubhamatkal.github.io/)
+This is personal portfolio website for Shubham Atkal it  is a static, minimalist, lightweight, lightning fast portfolio website. check the deployment [here](https://shubhamatkal.github.io/)
 
 Built with Astro, Tailwind and Typescript, an no frameworks.
 
