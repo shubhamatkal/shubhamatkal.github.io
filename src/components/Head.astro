@@ -10,7 +10,7 @@ import lora400 from "@fontsource/lora/files/lora-latin-400-normal.woff2";
 import lora600 from "@fontsource/lora/files/lora-latin-600-normal.woff2";
 
 import { ClientRouter } from "astro:transitions";
-import { SITE } from "@consts";
+import { SITE, SOCIALS } from "@consts";
 
 interface Props {
   title: string;
@@ -20,7 +20,19 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/nano.png" } = Astro.props;
+const { title, description, image = "/profile_photos/shubham_profile.png" } = Astro.props;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: SITE.NAME,
+  alternateName: "shubhamatkal",
+  url: Astro.site?.href,
+  image: new URL(image, Astro.site).href,
+  jobTitle: "Full Stack Developer",
+  email: `mailto:${SITE.EMAIL}`,
+  sameAs: SOCIALS.map((social) => social.HREF),
+};
 ---
 
 <!-- Global Metadata -->
@@ -44,6 +56,10 @@ const { title, description, image = "/nano.png" } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="robots" content="index, follow" />
+<meta name="author" content={SITE.NAME} />
+<meta name="keywords" content="Shubham Atkal, shubhamatkal, Shubham Atkal portfolio, full stack developer, software developer, SDE intern, SaaS developer" />
+<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />

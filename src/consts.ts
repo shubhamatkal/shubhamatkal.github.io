@@ -9,8 +9,8 @@ export const SITE: Site = {
 };
 
 export const HOME: Metadata = {
-  TITLE: "Home",
-  DESCRIPTION: "Shubham Atkal - Developer Portfolio and Projects",
+  TITLE: "Shubham Atkal | Full Stack Developer",
+  DESCRIPTION: "Official portfolio of Shubham Atkal, also known as shubhamatkal. Full Stack Developer and SDE Intern building SaaS products, backend systems, and practical tools.",
 };
 
 export const WORK: Metadata = {

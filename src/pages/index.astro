@@ -31,25 +31,31 @@ const work = await Promise.all(
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Shubham <span class="text-xl">👋🏻</span>
-    </h4>
     <div class="space-y-16">
-      <section>
-        <article class="space-y-4">
-          <p class="animate">
+      <section class="animate flex flex-col-reverse gap-8 sm:flex-row sm:items-start sm:justify-between">
+        <article class="max-w-md space-y-4">
+          <h4 class="font-semibold text-black dark:text-white">
+            Hi, I'm Shubham <span class="text-xl">👋🏻</span>
+          </h4>
+          <p>
             Full Stack developer who loves building end-to-end real-world
             solutions. Comfortable working with any technology or tool required
             to solve a problem.
           </p>
-          <p class="animate">
-            Feel free to explore my projects, and work, or get in
-            touch if you'd like to collaborate on something interesting!
+          <p>
+            Building SaaS products, backend systems, and practical tools.
             <span class="float-right text-black/50 dark:text-white/75">
               <Link href="/about"> Read more </Link>
             </span>
           </p>
         </article>
+        <img
+          src="/profile_photos/shubham_profile.png"
+          alt="Shubham Atkal"
+          width="112"
+          height="112"
+          class="size-24 shrink-0 rounded-full object-cover ring-1 ring-black/10 dark:ring-white/15 sm:size-28"
+        />
       </section>
 
       <section class="animate space-y-6">
